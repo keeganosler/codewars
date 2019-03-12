@@ -2,5 +2,11 @@ package kata
 import "strings"
 
 func FindShortestWord (s string) int {
-	
+	shortestWord := len(s)
+	for _, word := range strings.Split(s, " ") {
+		if len(word) < shortestWord {
+			shortestWord = len(word)
+		}
+	}
+	return shortestWord
 }
