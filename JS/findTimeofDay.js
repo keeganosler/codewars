@@ -2,6 +2,12 @@
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
+function makeNum (h) {
+  var firstDig = 0
+  h = firstDig.toString().concat(h.toString())
+  return h
+}
+
 function findPastTime (n) {
   
 }
@@ -12,7 +18,7 @@ function findFutureTime (n) {
   var minCounter =0;
   for (var i=0; i<n; i++) {
     minCounter = minCounter + 1 
-    if (i%60 === 0) {
+    if (minCounter%60 === 0) {
       hourCounter = hourCounter + 1 
       minCounter = 1
     }
@@ -25,11 +31,14 @@ function findFutureTime (n) {
   hour = hourCounter -1
   var firstNum
   if (hour < 10) {
-    firstNum = 0
+    hour = makeNum(hour)
   }
+
   min = minCounter
-  console.log('Day', day, 'Hour', hourCounter, 'Minute', minCounter)
-  console.log(day, firstNum.toString().concat(hour.toString()), ':', min.toString())  
+  if (min < 10) {
+    min = makeNum(min)
+  }  
+  console.log(day, hour, ':', min)  
 }
 
 function findTime (n) {
@@ -40,4 +49,4 @@ function findTime (n) {
   }
 }
 
-findTime(22)
+findTime(60)
