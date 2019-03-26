@@ -22,7 +22,14 @@ function findFutureTime (n) {
     }
   }
   day = days[dayCounter-1]
+  hour = hourCounter -1
+  var firstNum
+  if (hour < 10) {
+    firstNum = 0
+  }
+  min = minCounter
   console.log('Day', day, 'Hour', hourCounter, 'Minute', minCounter)
+  console.log(day, firstNum.toString().concat(hour.toString()), ':', min.toString())  
 }
 
 function findTime (n) {
