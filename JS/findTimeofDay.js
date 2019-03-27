@@ -8,11 +8,7 @@ function makeNum (h) {
   return h
 }
 
-function findPastTime (n) {
-  
-}
-
-function findFutureTime (n) {
+function findTime (n) {
   var dayCounter = 0;
   var hourCounter = 0;
   var minCounter =0;
@@ -27,26 +23,17 @@ function findFutureTime (n) {
       hourCounter = 1
     }
   }
-  day = days[dayCounter-1]
-  hour = hourCounter -1
-  var firstNum
+ var day = days[dayCounter-1]
+ var hour = hourCounter -1
   if (hour < 10) {
     hour = makeNum(hour)
   }
 
-  min = minCounter
+ var min = minCounter
   if (min < 10) {
     min = makeNum(min)
   }  
   console.log(day, hour, ':', min)  
 }
 
-function findTime (n) {
-  if (n < 0) {
-    findPastTime(n)
-  } else {
-    findFutureTime(n)
-  }
-}
-
-findTime(60)
+findTime(59)
