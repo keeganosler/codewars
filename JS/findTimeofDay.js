@@ -2,16 +2,14 @@
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-function makeNum (h) {
-  var firstDig = 0
-  h = firstDig.toString().concat(h.toString())
-  return h
+function makeNum (num) {
+  var zero = 0
+  num = zero.toString().concat(num.toString())
+  return num
 }
 
 function findTime (n) {
-  var dayCounter = 0;
-  var hourCounter = 0;
-  var minCounter =0;
+  var dayCounter, hourCounter, minCounter = 0;
   for (var i=0; i<n; i++) {
     minCounter = minCounter + 1 
     if (minCounter%60 === 0) {
@@ -28,12 +26,11 @@ function findTime (n) {
   if (hour < 10) {
     hour = makeNum(hour)
   }
-
- var min = minCounter
-  if (min < 10) {
-    min = makeNum(min)
+  if (minCounter < 10) {
+    minCounter = makeNum(minCounter)
   }  
-  console.log(day, hour, ':', min)  
+  console.log(day, hour, ':', minCounter)  
 }
 
-findTime(59)
+
+findTime(1500)
