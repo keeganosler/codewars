@@ -9,7 +9,14 @@ function arrString (aVar) {
 }
 
 function stringToArray(str) {
-  
+  var newArr = []
+  for (var i=0; i<str.length; i++) {
+    if (str[i] !== ",") {
+      newArr.push(str[i])
+    }
+  }
+  console.log(newArr)
+  return newArr
 }
 
 function arrayToString(arr) {
@@ -30,3 +37,5 @@ function arrayToString(arr) {
 }
 
 arrString([1,2,3,4])
+arrString("1,2,3,4")
+arrString(1234)
