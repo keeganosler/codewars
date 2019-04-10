@@ -13,13 +13,17 @@ function stringToArray(str) {
 }
 
 function arrayToString(arr) {
-  var newString = ''
+  var newString = ""
   if (arr.length < 3) {
     console.log("Error: array not long enough")
   } else {
     for (var i=0; i<arr.length; i++) {
-      newString.concat(arr[i].toString())
-      console.log(newString)
+      var numString = arr[i].toString()
+      if (newString === "") {
+        newString = numString
+      } else {
+        newString = newString.concat(numString)
+      }
     }
   }
   return newString
