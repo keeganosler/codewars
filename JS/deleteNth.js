@@ -3,19 +3,24 @@ function deleteNth(arr, num) {
   for (var i=0; i<arr.length; i++) {
     if (!resArr.includes(arr[i])) {
       resArr.push(arr[i])
-      console.log(resArr)
     } else {
-      var counter = 0
-      for (var j=0; j<resArr.length; j++) {
-        if (resArr[j] == arr[i]) {
-          counter = counter + 1
-          if (counter < num) {
-            resArr.push(arr[i])
-          }
-        }
+      var times = checkDigits(resArr, arr[i])
+      if(times < num) {
+        resArr.push(arr[i])
       }
     }
   }
+  return resArr
+}
+
+function checkDigits (arr, n) {
+  var counter = 0
+  for (var i=0; i<arr.length; i++) {
+    if (arr[i] == n) {
+      counter = counter + 1
+    }
+  }
+  return counter
 }
 
 deleteNth([1,2,3,4,3,3], 2)
