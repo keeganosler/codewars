@@ -13,5 +13,16 @@ function stringToArray(str) {
 }
 
 function arrayToString(arr) {
-  
+  var newString = ''
+  if (arr.length < 3) {
+    console.log("Error: array not long enough")
+  } else {
+    for (var i=0; i<arr.length; i++) {
+      newString.concat(arr[i].toString())
+      console.log(newString)
+    }
+  }
+  return newString
 }
+
+arrString([1,2,3,4])
