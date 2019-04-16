@@ -4,12 +4,15 @@ import "fmt"
 
 func main() {
     var strarr = []string {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
-    var res string
+    var res int
     res = longest_consec(strarr, 2)
-    fmt.Printf(res)
+    fmt.Printf(string(res))
 }
 
-func longest_consec(arr []string, len int) string{
-    var res = string ("Hello world")
-    return res
+func longest_consec(arr []string, len int) int{
+    var maxString = 0
+    for i:=0; i<7; i++ {
+        maxString = maxString + 1
+    }
+    return maxString
 }
