@@ -7,9 +7,12 @@ import (
 
 func main() {
     var strarr = []string {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
-    var res string
-    res = longest_consec(strarr, 2)
-    fmt.Printf(res)
+    var res1, res2, res3, res4 string
+    res1 = longest_consec(strarr, 2)
+    res2 = longest_consec(strarr, 3)
+    res3 = longest_consec(strarr, 9)
+    res4 = longest_consec(strarr, 0)
+    fmt.Printf("%s, %s, %s, %s", res1, res2, res3, res4)
 }
 
 func longest_consec(arr []string, n int) string{
@@ -19,10 +22,20 @@ func longest_consec(arr []string, n int) string{
         res = ""
     } else {
         for i:=0; i<len(arr)-1; i++ {
-            if len(arr[i])+len(arr[i+1]) > maxString {
+            /*if len(arr[i])+len(arr[i+1]) > maxString {
                 maxString = len(arr[i])+len(arr[i+1])
                 newArr := []string{arr[i],arr[i+1]}
-                res = strings.Join(newArr, " ")
+                res = strings.Join(newArr, "")
+            }*/
+            var newLen = 0
+            newArr := []string{}
+            for j:=0; j<n; j++ {
+                newLen = newLen + len(arr[i+j])
+                newArr[j] = arr[i+j]
+                if (newLen > maxString) {
+                    maxString = newLen
+                    res = strings.Join(newArr,"")
+                }
             }
         }
     }
