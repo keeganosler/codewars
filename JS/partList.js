@@ -14,7 +14,7 @@ function partList(arr) {
       }
     }
   }
-  console.log(finalArr)
+  return(finalArr)
 }
 
 partList(['one','two','three'])
