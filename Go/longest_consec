@@ -1,6 +1,9 @@
 package main
 
-import ("fmt" "strings")
+import (
+    "fmt"
+    "strings"
+    )
 
 func main() {
     var strarr = []string {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
@@ -12,10 +15,9 @@ func main() {
 func longest_consec(arr []string, n int) string{
     var maxString = 0
     var res string
-    if  (len(arr) = 0 || n>len(arr) || n <= 0 ){
+    if  (len(arr) == 0 || n>len(arr) || n <= 0 ){
         res = ""
-    }
-    else {
+    } else {
         for i:=0; i<len(arr)-1; i++ {
             if len(arr[i])+len(arr[i+1]) > maxString {
                 maxString = len(arr[i])+len(arr[i+1])
