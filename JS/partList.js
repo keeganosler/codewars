@@ -5,10 +5,10 @@ function partList(arr) {
   } else {
     for (var i=0; i<arr.length; i++) {
       for (var j=0; j<arr.length; j++) {
-        var list1 = arr.slice(i,j).toString()
-        var list2 = arr.slice(j,arr.length).toString()
-        if(list1!="" && list2!="") {
-          finalArr.push([list1,list2])
+        var list1 = arr.slice(i,j)
+        var list2 = arr.slice(j,arr.length)
+        if(list1!="" && list2!="" && list1.length+list2.length==arr.length) {
+          finalArr.push([list1.toString(),list2.toString()])
         }
         
       }
