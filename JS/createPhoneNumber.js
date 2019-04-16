@@ -1,6 +1,12 @@
+function concatNumber (n, m, phoneNumber, arr) {
+  for (var i=m; i<n; i++) {
+    phoneNumber = phoneNumber.concat(arr[i].toString())
+  }
+  return phoneNumber
+}
+
 function createPhoneNumber (arr) {
   var phoneNumber = ''
-  var areaCode = ''
   var firstPart = ''
   var secondPart = ''
   if (arr.length > 10) {
@@ -8,18 +14,10 @@ function createPhoneNumber (arr) {
   } else if (arr.length < 10) {
     phoneNumber = "not enough digits!"
   } else {
-    for (var i=0; i<3; i++) {
-      areaCode = areaCode.concat(arr[i].toString())
-    }
-    phoneNumber = '('.concat(areaCode).concat(')')
-    for (var i=3; i<6; i++) {
-      firstPart = firstPart.concat(arr[i].toString())
-    }
-    phoneNumber = phoneNumber.concat(' ',firstPart).concat('-')
-    for (var i=6; i<10; i++) {
-      secondPart = secondPart.concat(arr[i].toString())
-    }
-    phoneNumber = phoneNumber.concat(secondPart)
+    var areaCode = concatNumber(3,0,phoneNumber,arr)
+    var firstPart = concatNumber(6,3,phoneNumber,arr)
+    var secondPart = concatNumber(6,10,phoneNumber,arr)
+    phoneNumber = '('.concat(areaCode).concat(')').concat(' ').concat(firstPart).concat('-').concat(secondPart)
   }
   return phoneNumber
 }
