@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+    var strarr = []string {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
+    var res string
+    res = longest_consec(strarr, 2)
+    fmt.Printf(res)
+}
+
+func longest_consec(arr []string, len int) string{
+    var res = string ("Hello world")
+    return res
+}
