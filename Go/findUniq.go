@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+  var arr1 = []int {1,1,1,2,1,1}
+  var uniq = findUniq(arr1)
+  fmt.Println("unique: ", uniq)
+}
+
+func findUniq(arr []int) int {
+  var res int
+  for i:=1; i<len(arr); i++ {
+    if (arr[i] != arr[i-1]) {
+      res = arr[i]
+    }
+  }
+  return res
+}
