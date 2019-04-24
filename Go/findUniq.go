@@ -10,8 +10,8 @@ func main() {
 
 func findUniq(arr []int) int {
   var res int
-  for i:=1; i<len(arr); i++ {
-    if (arr[i] != arr[i-1]) {
+  for i:=0; i<len(arr)-1; i++ {
+    if (arr[i] != arr[i+1]) {
       res = arr[i]
     }
   }
