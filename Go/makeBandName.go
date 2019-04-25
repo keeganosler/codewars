@@ -15,7 +15,7 @@ func makeBandName (str string) string {
 	if(string(str[0]) != string(str[len(str)-1])){
 		res = "The " + s.Replace(str, string(str[0]), s.ToUpper(string(str[0])), 1)
 	} else {
-		res = "yes"
+		res = s.Replace(str, string(str[0]), s.ToUpper(string(str[0])), 1) + s.Replace(str, string(str[0]), "", 1)
 	}
 	return res
 }
