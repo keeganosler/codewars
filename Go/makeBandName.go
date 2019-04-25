@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-
 )
+import s "strings"
 
 func main() {
 	fmt.Println(makeBandName("dolphin"))
@@ -11,9 +11,11 @@ func main() {
 }
 
 func makeBandName (str string) string {
-	if(string(str[0]) == string(str[len(str)-1])){
-		return "hello world"
+	var res string
+	if(string(str[0]) != string(str[len(str)-1])){
+		res = "The " + s.Replace(str, string(str[0]), s.ToUpper(string(str[0])), 1)
 	} else {
-		return "yes"
+		res = "yes"
 	}
+	return res
 }
