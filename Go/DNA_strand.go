@@ -1,9 +1,32 @@
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "bytes"
+)
 
 func main() {
-   for i, c := range "ATTA" {
-       fmt.Println(i, string(c))
-   }
+   fmt.Println(DNA_strand("ATTA"))
+}
+
+func DNA_strand(str string) string {
+  var buf bytes.Buffer
+  var res string
+  for i:=0; i<len(str); i++ {
+    var currLetter = string(str[i])
+    if(currLetter == "A") {
+      buf.WriteString("T")
+      res = buf.String()
+    } else if (currLetter == "T") {
+      buf.WriteString("A")
+      res = buf.String()
+    } else if (currLetter == "C") {
+      buf.WriteString("G")
+      res = buf.String()
+    } else {
+      buf.WriteString("C")
+      res = buf.String()
+    }
+  }
+  return res
 }
