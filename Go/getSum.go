@@ -1,5 +1,7 @@
 package main
 
+/* gets the sum of all the numbers between two given numbers */
+
 import "fmt"
 
 func main() {
