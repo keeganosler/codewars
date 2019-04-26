@@ -1,5 +1,8 @@
 package main
 
+/* if a word doesn't start and end with the same letter, name the band The (capitalized word)
+   if it starts with and ends with the same letter, name the band word+word missing the first letter */
+
 import (
 	"fmt"
 )
