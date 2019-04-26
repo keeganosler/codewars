@@ -1,5 +1,7 @@
 package main
 
+/*determines if it is possible to form a triangle with three given side lengths using the triangle inequality principle */
+
 import (
 	"fmt"
 
