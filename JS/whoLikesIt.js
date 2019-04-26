@@ -1,3 +1,5 @@
+/* turns likes into a string */
+
 function whoLikesIt(arr) {
   var res = ''
   if(arr.length === 0) {
