@@ -1,5 +1,7 @@
 package main
 
+/* Converts between pairs in a DNA strand (i.e., A<=>T and C<=>G */
+
 import (
   "fmt"
   "bytes"
