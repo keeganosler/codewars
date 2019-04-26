@@ -1,3 +1,5 @@
+/*converts a string to an array or an array to a string*/
+
 function arrString (aVar) {
   if (typeof(aVar) === "string") {
     return stringToArray(aVar)
