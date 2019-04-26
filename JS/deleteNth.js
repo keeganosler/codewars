@@ -1,3 +1,5 @@
+/* deletes a certain number digit from an array */
+
 function deleteNth(arr, num) {
   var resArr = []
   for (var i=0; i<arr.length; i++) {
