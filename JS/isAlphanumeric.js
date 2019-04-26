@@ -1,3 +1,5 @@
+/* determines if a string is alphanumeric */
+
 var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
 var nums = '0123456789'.split('')
 
