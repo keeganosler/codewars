@@ -1,3 +1,5 @@
+/* converts a 10 digit number to a proper phone number format */
+
 function concatNumber (n, m, phoneNumber, arr) {
   for (var i=m; i<n; i++) {
     phoneNumber = phoneNumber.concat(arr[i].toString())
