@@ -1,5 +1,7 @@
 package main
 
+/* Converts each letter in a string to its corresponding military phonetic alphabet representation */
+
 import s "strings"
 import "fmt"
 import "bytes"
