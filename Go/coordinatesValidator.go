@@ -1,5 +1,7 @@
 package main
 
+/*determines if a set of latitiude and longitude coordinates are valid coordinates */
+
 import (
 	"fmt"
 )
