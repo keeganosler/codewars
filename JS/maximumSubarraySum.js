@@ -1,3 +1,5 @@
+/* determines the maximum sum of consecutive numbers in an array */
+
 function greatestSum (arr) {
   var maxSum = 0
   for (var i=0; i<arr.length-1; i++) {
