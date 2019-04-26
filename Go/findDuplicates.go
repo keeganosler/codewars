@@ -1,5 +1,7 @@
 package main
 
+/* finds the number of duplicate letters in a string */
+
 import (
 	"fmt"
 )
