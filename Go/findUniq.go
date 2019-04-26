@@ -1,5 +1,7 @@
 package main
 
+/* finds the one not like the others in a list of numbers */
+
 import "fmt"
 
 func main() {
