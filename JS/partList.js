@@ -1,3 +1,5 @@
+/* concatenates lists */
+
 function partList(arr) {
   var finalArr = []
   if(arr.length <= 1) {
