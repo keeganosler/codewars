@@ -6,7 +6,7 @@ import(
     )
 
 func main() {
-   fmt.Println(simpson(4))
+   fmt.Println(simpson(100))
 }
 
 func simpson(n int) float64 {
@@ -22,7 +22,7 @@ func simpson(n int) float64 {
 }
 
 func createSum1(a float64, n int, h float64) float64 {
-    var res = 0
+    var res = 0.0
     for i:=0; i<n/2; i++ {
         var f = a + ((2*float64(i))-1)*h
         res = res + createFunc(f)
@@ -31,9 +31,9 @@ func createSum1(a float64, n int, h float64) float64 {
 }
 
 func createSum2(a float64, n int, h float64) float64 {
-    var res = 0
+    var res = 0.0
     for i:=0; i<n/2 -1; i++ {
-        var f = a + 2*i*h
+        var f = a + 2*float64(i)*h
         res = res + createFunc(f)
     }
     return res
