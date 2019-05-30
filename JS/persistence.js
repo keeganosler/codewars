@@ -1,15 +1,25 @@
-function persistence(num) {
+function multiplyDigits(num) {
+  var res = 1
   var numStr = num.toString()
-  var prod = 1
-  if(numStr.length > 1) {
+  if(numStr.length == 1) {
+    res = res*numStr
+  } else {
     for(var i=0; i<numStr.length; i++) {
-      var prod = prod*numStr[i]
-    }
-    if(prod.length > 1) {
-      prod = persistence(prod)
+      res = res*numStr[i]
     }
   }
-  return prod
+  return res
+}
+
+function persistence(num) {
+  var count = 1
+  var prod = multiplyDigits(num)
+  var len = prod.toString().length
+  if(len > 1) {
+    prod = multiplyDigits(prod)
+    count = count + 1
+  }
+  return count
 }
 
 console.log(persistence(39))
