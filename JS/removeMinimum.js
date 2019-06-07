@@ -7,6 +7,6 @@ function removeSmallest(numbers) {
       minInd = i
     }
   }
-  var newNum = numbers.slice(minInd)
-  return newNum
+  numbers.splice(minInd,1)
+  return numbers
 }
