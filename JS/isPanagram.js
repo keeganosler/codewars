@@ -11,7 +11,12 @@ function isPanagram (str) {
       isCount = isCount
     }
   }
-  return isCount
+  if(isCount == 26) {
+    return true
+  }
+  else{
+    return false
+  }
 }
 
-console.log(isPanagram("abcdef"))
+console.log(isPanagram("The quick brown fox jumps over the lazy dog"))
