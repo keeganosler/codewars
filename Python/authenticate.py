@@ -1,3 +1,5 @@
+# basic user input authentication
+
 def authenticate():
     name = input("Please enter your name: ")
     password = input("Please enter your password: ")
