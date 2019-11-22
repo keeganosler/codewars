@@ -1,3 +1,5 @@
+/* implements persistence of digits */
+
 function multiplyDigits(num) {
   var res = 1
   var numStr = num.toString()
