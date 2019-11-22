@@ -1,3 +1,5 @@
+/*detects the difference in evenness */
+
 console.log(evennessDifference([2,4,7,8,10]))
 
 function evennessDifference(arr) {
