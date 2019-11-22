@@ -1,6 +1,6 @@
 /* determines date (day and time) */
 
-/*1440 minutes in a day */
+// 1440 minutes in a day
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
