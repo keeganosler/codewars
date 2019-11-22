@@ -1,3 +1,5 @@
+# counts the numbers of 0s and 1s in a given set of numbers
+
 import numpy as np
 
 def zeros_and_ones(arr):
