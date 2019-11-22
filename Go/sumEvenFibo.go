@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+/* sums all the even fibonacci numbers between two given numbers */
+
 func main() {
     n := 20
    fmt.Println(sumEvenFibo(n))
