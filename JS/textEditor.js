@@ -1,3 +1,5 @@
+/* line numbering for a text editor software */
+
 function textEditor(arr) {
   var text = []
   for(var i=0; i<arr.length; i++) {
