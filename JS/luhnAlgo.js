@@ -1,3 +1,5 @@
+/* implements the Luhn algorithm */
+
 function luhnAlgo(arr) {
   if(arr.length%2 !== 0) { //odd number of digits
     for(var i=0; i>arr.length; i++) {
