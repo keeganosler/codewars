@@ -1,3 +1,5 @@
+/* calculates a person's BMI given their height and weight */
+
 function bmi(height, weight) {
   var bmi 
   var res = weight / height
