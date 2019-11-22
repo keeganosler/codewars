@@ -1,3 +1,5 @@
+# counts the number of smiley faces in a string
+
 def count_smileys(arr):
     count = 0
     for x in arr:
