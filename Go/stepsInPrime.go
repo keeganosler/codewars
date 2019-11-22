@@ -5,6 +5,8 @@ import(
 
     )
 
+/* determines all the steps in prime numbers between two different numbers */
+
 func main() {
    fmt.Println(stepsInPrime(2,2,50))
 }
