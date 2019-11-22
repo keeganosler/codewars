@@ -1,3 +1,5 @@
+/* calculates the difference in two cuboid volumes */
+
 function differenceInCuboidVolume(arr1,arr2) {
   var a1, a2 = 1
   for(var i=0; i<arr1.length; i++) {
