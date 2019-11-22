@@ -1,3 +1,5 @@
+/* removes the smallest number from a set of numbers */
+
 function removeSmallest(numbers) {
   var minNum = 100000000000000000
   var minInd
