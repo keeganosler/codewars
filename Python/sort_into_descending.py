@@ -1,3 +1,5 @@
+# sorts a set of numbers into descending order
+
 def sort_into_descending(num):
     descending = "".join(sorted(str(num), reverse=True))
     print(descending)
