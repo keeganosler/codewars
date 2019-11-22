@@ -1,3 +1,5 @@
+/* gets the ASCII value of a given character */
+
 function getAsciiChar(str) {
   var code 
   if(str.length > 1) {
