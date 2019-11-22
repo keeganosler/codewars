@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+/* checks for inconsistencies in sets of stirngs */
+
 func main() {
   s1 := "aaabbbcccddd"
   s2 := "aaabbcddd"
