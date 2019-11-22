@@ -1,3 +1,5 @@
+# sums the binary digits of given numbers
+
 def return_binary_sum(a,b):
     res = a + b
     binary_res = bin(res)
