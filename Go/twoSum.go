@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+/* creates a double sum */
+
 func main() {
     var arr1 = []int {1,2,3,4,5}
     var arr2 = []int {1,3,5,2,4}
