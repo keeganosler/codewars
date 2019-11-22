@@ -1,3 +1,5 @@
+/* finds the longest substring of string 1 contained in string 2 */
+
 function longest(str1, str2) {
   var resArr = []
   for(var i=0; i<str1.length; i++) {
