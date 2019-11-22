@@ -1,3 +1,5 @@
+/* creates initials given a name */
+
 function initializer(name: string) {
     var initials: string
     var idx = name.indexOf(' ')
