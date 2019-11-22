@@ -1,3 +1,5 @@
+/* sorts a list of characters and transforms them to their ASCII values */
+
 function sortAndTransform(arr){
   var ascArr = arr.sort(function(a,b){return a-b})
   var desArr = arr.sort(function(a,b){return b-a})
