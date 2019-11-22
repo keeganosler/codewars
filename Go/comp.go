@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+/*determine if an array of ints contains the square of any numbers in another array */
+
 func main() {
   arr1 := []int {1,2,3,4}
   arr2 := []int {1,4,9,16}
