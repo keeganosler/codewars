@@ -1,3 +1,5 @@
+# determines the number of people on a hypothetical bus
+
 def people_on_bus(arr):
     total = 0
     for x in arr:
