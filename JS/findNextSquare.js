@@ -1,3 +1,5 @@
+/* finds the next consecutive square number after the given number */
+
 function findNextSquare(sq) {
   var res
   var n = Math.sqrt(sq)
