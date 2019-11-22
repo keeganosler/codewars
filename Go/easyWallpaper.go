@@ -5,6 +5,8 @@ import (
     "math"
     )
 
+/*determines rolls of wallpaper needed for a specific project*/
+
 func main() {
    l := 4.0
    w := 3.5
