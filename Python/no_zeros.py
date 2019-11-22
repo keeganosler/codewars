@@ -1,4 +1,4 @@
-#checks if a given number has a trailing zero and if it does, removes it
+# checks if a given number has a trailing zero and if it does, removes it
 
 def no_zeros(num):
     last_digit = num%10
