@@ -5,6 +5,8 @@ import(
     "math"
     )
 
+/* implements Simpson formula */
+
 func main() {
    fmt.Println(simpson(100))
 }
