@@ -5,6 +5,8 @@ import (
     "strings"
     )
 
+/* determines longest consecutive string in an array */
+
 func main() {
     var strarr = []string {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}
     var res1, res2, res3, res4 string
