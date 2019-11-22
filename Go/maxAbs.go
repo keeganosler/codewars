@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+/* determines the maximum substring built using strings from two different arrays */
+
 func main() {
   var a1 = []string {}
   var a2 = []string {}
