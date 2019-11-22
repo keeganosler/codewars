@@ -1,3 +1,5 @@
+/* revereses each word in a given string */
+
 function reverseEachWord(str){
   var words = str.split(" ")
   var wordsReversed = []
