@@ -4,6 +4,8 @@ import(
     "fmt"
     )
 
+/* propagates fuscilli numbers */
+
 func main() {
    fmt.Println(fusc(10))
 }
