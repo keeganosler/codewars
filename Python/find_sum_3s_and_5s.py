@@ -1,3 +1,5 @@
+# sums the multiples of 3 and 5 that a given number has
+
 def find_sum_3s_and_5s(n):
     i = 0
     tot = 0
