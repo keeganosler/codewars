@@ -1,3 +1,7 @@
+/* finds the innermost (middle) substring in a string
+   one letter if its an odd length string
+   two letters if its an even length string */
+
 function getMiddle(str) {
   var subStr
   if(str.length%2 == 0) {
