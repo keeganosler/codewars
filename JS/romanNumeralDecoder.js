@@ -1,3 +1,5 @@
+/* decodes roman numerals into arabic numbers */
+
 var numerals = ['I','V','X','L','C','D','M']
 var nums = [1,5,10,50,100,500,1000]
 
