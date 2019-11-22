@@ -24,11 +24,6 @@ func longest_consec(arr []string, n int) string{
         res = ""
     } else {
         for i:=0; i<len(arr)-1; i++ {
-            /*if len(arr[i])+len(arr[i+1]) > maxString {
-                maxString = len(arr[i])+len(arr[i+1])
-                newArr := []string{arr[i],arr[i+1]}
-                res = strings.Join(newArr, "")
-            }*/
             var newLen = 0
             newArr := []string{}
             for j:=0; j<n; j++ {
