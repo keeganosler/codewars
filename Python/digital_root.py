@@ -2,7 +2,10 @@ def digitalRoot(number):
     result = 0
     for i in str(number)[::-1]:
         result = result + int(i)
-    print result
+        if len(str(result)) > 1:
+            digitalRoot(result)
+        else:
+            print result
         
 
-digitalRoot(33)
+digitalRoot(42)
