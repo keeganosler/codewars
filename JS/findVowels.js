@@ -1,4 +1,4 @@
-/* finds all the voewls in a given string */
+/* finds all the vowels in a given string */
 
 function findVowels (str) {
   var vowels = ['a','e','i','o','u','A','E','I','O','U']
